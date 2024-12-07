@@ -13,19 +13,28 @@ config_version=5
 config/name="Deadwood Express"
 config/version="0.0.1"
 run/main_scene="res://Deadwood/deadwood.tscn"
-config/features=PackedStringArray("4.2", "Forward Plus")
+config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/image="res://Assets/Splash.png"
 config/icon="res://icon.svg"
+boot_splash/minimum_display_time=5000
+
+[autoload]
+
+GDConsole="*res://addons/gdconsole/gdconsole.gd"
 
 [display]
 
 window/size/mode=2
-window/size/resizable=false
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
 [dotnet]
 
 project/assembly_name="Deadwood Express"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gdconsole/plugin.cfg")
 
 [importer_defaults]
 
