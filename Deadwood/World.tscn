@@ -1,0 +1,315 @@
+[gd_scene load_steps=90 format=3 uid="uid://co72qt07lmhgk"]
+
+[ext_resource type="Environment" uid="uid://kcssihh3cayd" path="res://Map/Assets/World_Env.tres" id="1_vsylq"]
+[ext_resource type="Script" path="res://addons/terrabrush/TerraBrush.cs" id="1_y75qx"]
+[ext_resource type="Texture2D" uid="uid://dunp0p84xa68b" path="res://Deadwood/World/Heightmap_0_0.res" id="2_eeauj"]
+[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/TextureSetResource.cs" id="2_lqx6v"]
+[ext_resource type="Texture2D" uid="uid://d1fpsmbmoltka" path="res://Map/Assets/Ground052_1K-PNG_Color.png" id="2_teost"]
+[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/ZoneResource.cs" id="3_k7sd5"]
+[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/TextureSetsResource.cs" id="3_poiev"]
+[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/ZonesResource.cs" id="4_ibc8e"]
+[ext_resource type="Texture2D" uid="uid://c72xkbivipmfc" path="res://Map/Assets/Ground052_1K-PNG_NormalGL.png" id="4_ndoyf"]
+[ext_resource type="Texture2D" uid="uid://bqg3cnt1tkkdp" path="res://Deadwood/World/Splatmap_0_0_0.res" id="4_nijx7"]
+[ext_resource type="Texture2D" uid="uid://du3owuhkglbed" path="res://Map/Assets/Ground052_1K-PNG_Roughness.png" id="5_kmb1p"]
+[ext_resource type="Texture2D" uid="uid://haajxojptkhd" path="res://Deadwood/World/Heightmap_0_1.res" id="10_p0n8t"]
+[ext_resource type="Texture2D" uid="uid://btl8tpr2dej0h" path="res://Deadwood/World/Splatmap_0_1_0.res" id="11_4osen"]
+[ext_resource type="Texture2D" uid="uid://b1a20tns0jtwl" path="res://Deadwood/World/Heightmap_1_0.res" id="12_v18io"]
+[ext_resource type="Texture2D" uid="uid://curv5geoc5bc1" path="res://Deadwood/World/Splatmap_1_0_0.res" id="13_31oi1"]
+[ext_resource type="Texture2D" uid="uid://caqnt8heho1i2" path="res://Deadwood/World/Heightmap_1_1.res" id="14_q1qhb"]
+[ext_resource type="Texture2D" uid="uid://dp1dpw6gg3jug" path="res://Deadwood/World/Splatmap_1_1_0.res" id="15_h3gi8"]
+[ext_resource type="Texture2D" uid="uid://724suc7iaqwc" path="res://Deadwood/World/Heightmap_-1_1.res" id="16_ah8jc"]
+[ext_resource type="Texture2D" uid="uid://bfgl8pal7bmkl" path="res://Deadwood/World/Splatmap_-1_1_0.res" id="17_paqfw"]
+[ext_resource type="Texture2D" uid="uid://dxs4li40hfcmv" path="res://Deadwood/World/Heightmap_-1_0.res" id="18_hnpoe"]
+[ext_resource type="Texture2D" uid="uid://bp7nyuylhic6e" path="res://Deadwood/World/Splatmap_-1_0_0.res" id="19_304ty"]
+[ext_resource type="Texture2D" uid="uid://d1glikogp5h88" path="res://Deadwood/World/Heightmap_-1_-1.res" id="20_tfoqm"]
+[ext_resource type="Texture2D" uid="uid://b2a2yatttwtm" path="res://Deadwood/World/Splatmap_-1_-1_0.res" id="21_a5ecc"]
+[ext_resource type="Texture2D" uid="uid://dnptfilx3rjch" path="res://Deadwood/World/Heightmap_0_-1.res" id="22_g3a0a"]
+[ext_resource type="Texture2D" uid="uid://c73psjpox7bot" path="res://Deadwood/World/Splatmap_0_-1_0.res" id="23_dos8c"]
+[ext_resource type="Texture2D" uid="uid://bepefjw7odbqj" path="res://Deadwood/World/Heightmap_1_-1.res" id="24_e3p1w"]
+[ext_resource type="Texture2D" uid="uid://cg3rxg6bvdt2m" path="res://Deadwood/World/Splatmap_1_-1_0.res" id="25_8yfkm"]
+[ext_resource type="Texture2D" uid="uid://cwv7n65vxp0oj" path="res://Deadwood/World/Heightmap_-1_-2.res" id="26_x05oa"]
+[ext_resource type="Texture2D" uid="uid://cs8aim245fo1l" path="res://Deadwood/World/Splatmap_-1_-2_0.res" id="27_robn8"]
+[ext_resource type="Texture2D" uid="uid://dexk4uct8o3s" path="res://Deadwood/World/Heightmap_0_-2.res" id="28_rvjq3"]
+[ext_resource type="Texture2D" uid="uid://sy885yelh75f" path="res://Deadwood/World/Splatmap_0_-2_0.res" id="29_6367u"]
+[ext_resource type="Texture2D" uid="uid://olm4kwo41bxv" path="res://Deadwood/World/Heightmap_1_-2.res" id="30_j6hty"]
+[ext_resource type="Texture2D" uid="uid://5j1snw8xm0im" path="res://Deadwood/World/Splatmap_1_-2_0.res" id="31_lstbx"]
+[ext_resource type="Texture2D" uid="uid://d1m36g3j7fk21" path="res://Deadwood/World/Heightmap_2_-2.res" id="32_m0eq1"]
+[ext_resource type="Texture2D" uid="uid://bpfc5dawxcjoe" path="res://Deadwood/World/Splatmap_2_-2_0.res" id="33_dvv72"]
+[ext_resource type="Texture2D" uid="uid://dj3sgwjhsb504" path="res://Deadwood/World/Heightmap_2_-1.res" id="34_lse6c"]
+[ext_resource type="Texture2D" uid="uid://6rvdk1m6jlha" path="res://Deadwood/World/Splatmap_2_-1_0.res" id="35_7rtmt"]
+[ext_resource type="Texture2D" uid="uid://wmawmw80nit7" path="res://Deadwood/World/Heightmap_2_0.res" id="36_83lt5"]
+[ext_resource type="Texture2D" uid="uid://cbt4nr0gr2407" path="res://Deadwood/World/Splatmap_2_0_0.res" id="37_867bu"]
+[ext_resource type="Texture2D" uid="uid://bc0rju1pkufel" path="res://Deadwood/World/Heightmap_2_1.res" id="38_lelg1"]
+[ext_resource type="Texture2D" uid="uid://gkc3w6m63jmq" path="res://Deadwood/World/Splatmap_2_1_0.res" id="39_s0qbw"]
+[ext_resource type="Texture2D" uid="uid://c3nnsl0s7c1ov" path="res://Deadwood/World/Heightmap_1_2.res" id="40_fhvt2"]
+[ext_resource type="Texture2D" uid="uid://csrfgr78kx0gx" path="res://Deadwood/World/Splatmap_1_2_0.res" id="41_rjgl2"]
+[ext_resource type="Texture2D" uid="uid://chema781xc0rf" path="res://Deadwood/World/Heightmap_2_2.res" id="42_pm6rq"]
+[ext_resource type="Texture2D" uid="uid://bsalo5o88ulqh" path="res://Deadwood/World/Splatmap_2_2_0.res" id="43_hf25q"]
+[ext_resource type="Texture2D" uid="uid://ewj5i1kd0nin" path="res://Deadwood/World/Heightmap_0_2.res" id="44_704pp"]
+[ext_resource type="Texture2D" uid="uid://bo3h08n7ft5yb" path="res://Deadwood/World/Splatmap_0_2_0.res" id="45_evbyq"]
+[ext_resource type="Texture2D" uid="uid://clxi0re4dcing" path="res://Deadwood/World/Heightmap_-1_2.res" id="46_nab5f"]
+[ext_resource type="Texture2D" uid="uid://cxghhniufw77t" path="res://Deadwood/World/Splatmap_-1_2_0.res" id="47_18bam"]
+[ext_resource type="Texture2D" uid="uid://bij8wquyf3400" path="res://Deadwood/World/Heightmap_-2_2.res" id="48_ayris"]
+[ext_resource type="Texture2D" uid="uid://ci0gvi7pk3p5k" path="res://Deadwood/World/Splatmap_-2_2_0.res" id="49_evfx4"]
+[ext_resource type="Texture2D" uid="uid://exhh4o6clw4e" path="res://Deadwood/World/Heightmap_-2_1.res" id="50_7jyr5"]
+[ext_resource type="Texture2D" uid="uid://bwslysv4npnw0" path="res://Deadwood/World/Splatmap_-2_1_0.res" id="51_vgpi4"]
+[ext_resource type="Texture2D" uid="uid://cei3s6hqbg3a1" path="res://Deadwood/World/Heightmap_-2_0.res" id="52_1nhr7"]
+[ext_resource type="Texture2D" uid="uid://ccv5krdu1p2rr" path="res://Deadwood/World/Splatmap_-2_0_0.res" id="53_xd2q0"]
+[ext_resource type="Texture2D" uid="uid://dnngku0al1j7x" path="res://Deadwood/World/Heightmap_-2_-1.res" id="54_bct6u"]
+[ext_resource type="Texture2D" uid="uid://brkvhoai0rwd" path="res://Deadwood/World/Splatmap_-2_-1_0.res" id="55_t70sb"]
+[ext_resource type="Texture2D" uid="uid://3bicvc5etb8g" path="res://Deadwood/World/Heightmap_-2_-2.res" id="56_vv6uv"]
+[ext_resource type="Texture2D" uid="uid://djffs1eeuesa" path="res://Deadwood/World/Splatmap_-2_-2_0.res" id="57_dtpgh"]
+
+[sub_resource type="Resource" id="Resource_g6qh1"]
+script = ExtResource("2_lqx6v")
+Name = ""
+AlbedoTexture = ExtResource("2_teost")
+NormalTexture = ExtResource("4_ndoyf")
+RoughnessTexture = ExtResource("5_kmb1p")
+TextureDetail = -1
+
+[sub_resource type="Resource" id="Resource_nagbb"]
+script = ExtResource("3_poiev")
+TextureSets = [SubResource("Resource_g6qh1")]
+
+[sub_resource type="Resource" id="Resource_0lt84"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(0, 0)
+HeightMapTexture = ExtResource("2_eeauj")
+SplatmapsTexture = [ExtResource("4_nijx7")]
+FoliagesTexture = []
+ObjectsTexture = []
+
+[sub_resource type="Resource" id="Resource_artpv"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(0, 1)
+HeightMapTexture = ExtResource("10_p0n8t")
+SplatmapsTexture = [ExtResource("11_4osen")]
+FoliagesTexture = []
+ObjectsTexture = []
+
+[sub_resource type="Resource" id="Resource_qoet8"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(1, 0)
+HeightMapTexture = ExtResource("12_v18io")
+SplatmapsTexture = [ExtResource("13_31oi1")]
+FoliagesTexture = []
+ObjectsTexture = []
+
+[sub_resource type="Resource" id="Resource_svgyn"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(1, 1)
+HeightMapTexture = ExtResource("14_q1qhb")
+SplatmapsTexture = [ExtResource("15_h3gi8")]
+FoliagesTexture = []
+ObjectsTexture = []
+
+[sub_resource type="Resource" id="Resource_cf751"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(-1, 1)
+HeightMapTexture = ExtResource("16_ah8jc")
+SplatmapsTexture = [ExtResource("17_paqfw")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_rm3fq"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(-1, 0)
+HeightMapTexture = ExtResource("18_hnpoe")
+SplatmapsTexture = [ExtResource("19_304ty")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_fdfkr"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(-1, -1)
+HeightMapTexture = ExtResource("20_tfoqm")
+SplatmapsTexture = [ExtResource("21_a5ecc")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_udyqt"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(0, -1)
+HeightMapTexture = ExtResource("22_g3a0a")
+SplatmapsTexture = [ExtResource("23_dos8c")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_ahxc7"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(1, -1)
+HeightMapTexture = ExtResource("24_e3p1w")
+SplatmapsTexture = [ExtResource("25_8yfkm")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_xot62"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(-1, -2)
+HeightMapTexture = ExtResource("26_x05oa")
+SplatmapsTexture = [ExtResource("27_robn8")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_ewr47"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(0, -2)
+HeightMapTexture = ExtResource("28_rvjq3")
+SplatmapsTexture = [ExtResource("29_6367u")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_07eki"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(1, -2)
+HeightMapTexture = ExtResource("30_j6hty")
+SplatmapsTexture = [ExtResource("31_lstbx")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_tdrp0"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(2, -2)
+HeightMapTexture = ExtResource("32_m0eq1")
+SplatmapsTexture = [ExtResource("33_dvv72")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_shheb"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(2, -1)
+HeightMapTexture = ExtResource("34_lse6c")
+SplatmapsTexture = [ExtResource("35_7rtmt")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_75vu5"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(2, 0)
+HeightMapTexture = ExtResource("36_83lt5")
+SplatmapsTexture = [ExtResource("37_867bu")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_kuie2"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(2, 1)
+HeightMapTexture = ExtResource("38_lelg1")
+SplatmapsTexture = [ExtResource("39_s0qbw")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_mtppk"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(1, 2)
+HeightMapTexture = ExtResource("40_fhvt2")
+SplatmapsTexture = [ExtResource("41_rjgl2")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_qr5rn"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(2, 2)
+HeightMapTexture = ExtResource("42_pm6rq")
+SplatmapsTexture = [ExtResource("43_hf25q")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_qthe6"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(0, 2)
+HeightMapTexture = ExtResource("44_704pp")
+SplatmapsTexture = [ExtResource("45_evbyq")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_yuuqg"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(-1, 2)
+HeightMapTexture = ExtResource("46_nab5f")
+SplatmapsTexture = [ExtResource("47_18bam")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_0whd1"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(-2, 2)
+HeightMapTexture = ExtResource("48_ayris")
+SplatmapsTexture = [ExtResource("49_evfx4")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_asm03"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(-2, 1)
+HeightMapTexture = ExtResource("50_7jyr5")
+SplatmapsTexture = [ExtResource("51_vgpi4")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_h6xk1"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(-2, 0)
+HeightMapTexture = ExtResource("52_1nhr7")
+SplatmapsTexture = [ExtResource("53_xd2q0")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_6yvmt"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(-2, -1)
+HeightMapTexture = ExtResource("54_bct6u")
+SplatmapsTexture = [ExtResource("55_t70sb")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_76n3x"]
+script = ExtResource("3_k7sd5")
+ZonePosition = Vector2i(-2, -2)
+HeightMapTexture = ExtResource("56_vv6uv")
+SplatmapsTexture = [ExtResource("57_dtpgh")]
+FoliagesTexture = null
+ObjectsTexture = null
+
+[sub_resource type="Resource" id="Resource_00guq"]
+script = ExtResource("4_ibc8e")
+Zones = [SubResource("Resource_0lt84"), SubResource("Resource_artpv"), SubResource("Resource_qoet8"), SubResource("Resource_svgyn"), SubResource("Resource_cf751"), SubResource("Resource_rm3fq"), SubResource("Resource_fdfkr"), SubResource("Resource_udyqt"), SubResource("Resource_ahxc7"), SubResource("Resource_xot62"), SubResource("Resource_ewr47"), SubResource("Resource_07eki"), SubResource("Resource_tdrp0"), SubResource("Resource_shheb"), SubResource("Resource_75vu5"), SubResource("Resource_kuie2"), SubResource("Resource_mtppk"), SubResource("Resource_qr5rn"), SubResource("Resource_qthe6"), SubResource("Resource_yuuqg"), SubResource("Resource_0whd1"), SubResource("Resource_asm03"), SubResource("Resource_h6xk1"), SubResource("Resource_6yvmt"), SubResource("Resource_76n3x")]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_kgsc5"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nhl8h"]
+radius = 2.99627
+height = 11.2404
+
+[node name="World" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.5, -2.18557e-08, 0, -4.37114e-08, 1, -0.5, 0.866025, 3.78552e-08, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("1_vsylq")
+
+[node name="TerraBrush" type="Node3D" parent="."]
+script = ExtResource("1_y75qx")
+ZonesSize = 550
+DataPath = "res://Deadwood/World"
+TextureSets = SubResource("Resource_nagbb")
+TerrainZones = SubResource("Resource_00guq")
+metadata/_edit_lock_ = false
+
+[node name="Bean Movment Tester" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 859.634, 0, 858.549)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Bean Movment Tester"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 5.12126, 0)
+mesh = SubResource("CapsuleMesh_kgsc5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bean Movment Tester"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.22166, 0)
+shape = SubResource("CapsuleShape3D_nhl8h")
+
+[node name="Camera3D" type="Camera3D" parent="Bean Movment Tester"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.344971, 9.14742, 0)
+environment = ExtResource("1_vsylq")

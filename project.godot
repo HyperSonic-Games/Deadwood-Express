@@ -13,7 +13,7 @@ config_version=5
 config/name="Deadwood Express"
 config/version="0.0.1"
 run/main_scene="res://Deadwood/deadwood.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.3", "C#", "Forward Plus")
 boot_splash/image="res://Assets/Splash.png"
 config/icon="res://icon.svg"
 boot_splash/minimum_display_time=5000
@@ -21,6 +21,8 @@ boot_splash/minimum_display_time=5000
 [autoload]
 
 GDConsole="*res://addons/gdconsole/gdconsole.gd"
+DwString="*res://Lib/Text/dw_string.gd"
+DwEventBus="*res://Lib/dw_event_bus.gd"
 
 [display]
 
@@ -34,7 +36,7 @@ project/assembly_name="Deadwood Express"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/gdconsole/plugin.cfg")
+enabled=PackedStringArray("res://addons/gdconsole/plugin.cfg", "res://addons/terrabrush/plugin.cfg")
 
 [importer_defaults]
 
