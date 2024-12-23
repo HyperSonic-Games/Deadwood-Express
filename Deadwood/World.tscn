@@ -109,168 +109,168 @@ script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(-1, 1)
 HeightMapTexture = ExtResource("16_ah8jc")
 SplatmapsTexture = [ExtResource("17_paqfw")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_rm3fq"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(-1, 0)
 HeightMapTexture = ExtResource("18_hnpoe")
 SplatmapsTexture = [ExtResource("19_304ty")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_fdfkr"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(-1, -1)
 HeightMapTexture = ExtResource("20_tfoqm")
 SplatmapsTexture = [ExtResource("21_a5ecc")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_udyqt"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(0, -1)
 HeightMapTexture = ExtResource("22_g3a0a")
 SplatmapsTexture = [ExtResource("23_dos8c")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_ahxc7"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(1, -1)
 HeightMapTexture = ExtResource("24_e3p1w")
 SplatmapsTexture = [ExtResource("25_8yfkm")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_xot62"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(-1, -2)
 HeightMapTexture = ExtResource("26_x05oa")
 SplatmapsTexture = [ExtResource("27_robn8")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_ewr47"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(0, -2)
 HeightMapTexture = ExtResource("28_rvjq3")
 SplatmapsTexture = [ExtResource("29_6367u")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_07eki"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(1, -2)
 HeightMapTexture = ExtResource("30_j6hty")
 SplatmapsTexture = [ExtResource("31_lstbx")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_tdrp0"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(2, -2)
 HeightMapTexture = ExtResource("32_m0eq1")
 SplatmapsTexture = [ExtResource("33_dvv72")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_shheb"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(2, -1)
 HeightMapTexture = ExtResource("34_lse6c")
 SplatmapsTexture = [ExtResource("35_7rtmt")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_75vu5"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(2, 0)
 HeightMapTexture = ExtResource("36_83lt5")
 SplatmapsTexture = [ExtResource("37_867bu")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_kuie2"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(2, 1)
 HeightMapTexture = ExtResource("38_lelg1")
 SplatmapsTexture = [ExtResource("39_s0qbw")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_mtppk"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(1, 2)
 HeightMapTexture = ExtResource("40_fhvt2")
 SplatmapsTexture = [ExtResource("41_rjgl2")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_qr5rn"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(2, 2)
 HeightMapTexture = ExtResource("42_pm6rq")
 SplatmapsTexture = [ExtResource("43_hf25q")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_qthe6"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(0, 2)
 HeightMapTexture = ExtResource("44_704pp")
 SplatmapsTexture = [ExtResource("45_evbyq")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_yuuqg"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(-1, 2)
 HeightMapTexture = ExtResource("46_nab5f")
 SplatmapsTexture = [ExtResource("47_18bam")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_0whd1"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(-2, 2)
 HeightMapTexture = ExtResource("48_ayris")
 SplatmapsTexture = [ExtResource("49_evfx4")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_asm03"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(-2, 1)
 HeightMapTexture = ExtResource("50_7jyr5")
 SplatmapsTexture = [ExtResource("51_vgpi4")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_h6xk1"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(-2, 0)
 HeightMapTexture = ExtResource("52_1nhr7")
 SplatmapsTexture = [ExtResource("53_xd2q0")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_6yvmt"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(-2, -1)
 HeightMapTexture = ExtResource("54_bct6u")
 SplatmapsTexture = [ExtResource("55_t70sb")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_76n3x"]
 script = ExtResource("3_k7sd5")
 ZonePosition = Vector2i(-2, -2)
 HeightMapTexture = ExtResource("56_vv6uv")
 SplatmapsTexture = [ExtResource("57_dtpgh")]
-FoliagesTexture = null
-ObjectsTexture = null
+FoliagesTexture = []
+ObjectsTexture = []
 
 [sub_resource type="Resource" id="Resource_00guq"]
 script = ExtResource("4_ibc8e")
