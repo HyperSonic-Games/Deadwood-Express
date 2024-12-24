@@ -5,14 +5,11 @@ extends Node
 var subscribers: Dictionary = {}
 
 # Reference to the logger
-var Logger: DW_Logger = null
+@onready var Logger: DW_Logger = DW_Logger.new()
 
 # Called when the node enters the scene tree
 func _ready() -> void:
-	# Ensure Logger is available
-	Logger = get_node_or_null("/root/DW_Logger")
-	if Logger == null:
-		print("Logger not found! Ensure DW_Logger is set up as a global node.")
+	pass
 
 # Subscribe to an event
 func subscribe(event_name: String, callback: Callable) -> void:
@@ -30,12 +27,12 @@ func publish(event_name: String, data: Variant = null) -> void:
 	if not subscribers.has(event_name):
 		Logger.warn("DW_EVENT_BUS", "No subscribers for event: " + event_name)
 		return
-	Logger.info("Publishing event: " + event_name + " | Data: " + str(data))
+	Logger.info("DW_EVENT_BUS", "Publishing event: " + event_name + " | Data: " + str(data))
 	for callback in subscribers[event_name]:
 		if callback.is_valid():
 			callback.call(data)
 		else:
-			log("Invalid callback removed from event: " + event_name)
+			Logger.error("DW_EVENT_BUS", "Invalid callback removed from event: " + event_name)
 			subscribers[event_name].erase(callback)
 
 # Unsubscribe from an event
@@ -43,15 +40,8 @@ func unsubscribe(event_name: String, callback: Callable) -> void:
 	if subscribers.has(event_name):
 		if callback in subscribers[event_name]:
 			subscribers[event_name].erase(callback)
-			log("Unsubscribed from event: " + event_name + " | Remaining callbacks: " + str(subscribers[event_name].size()))
+			Logger.info("DW_EVENT_BUS","Unsubscribed from event: " + event_name + " | Remaining callbacks: " + str(subscribers[event_name].size()))
 		else:
-			log("Callback not found for event: " + event_name)
+			Logger.warn("DW_EVENT_BUS","Callback not found for event: " + event_name)
 	else:
-		log("Event not found: " + event_name)
-
-# Helper function to log messages using the logger
-func log(message: String) -> void:
-	if Logger != null:
-		Logger.info("DW_EventBus", message)
-	else:
-		print("[DW_EventBus] " + message)
+		Logger.error("DW_EVENT_BUS","Event not found: " + event_name)

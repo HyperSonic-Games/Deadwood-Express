@@ -1,4 +1,4 @@
-[gd_scene load_steps=90 format=3 uid="uid://co72qt07lmhgk"]
+[gd_scene load_steps=88 format=3 uid="uid://co72qt07lmhgk"]
 
 [ext_resource type="Environment" uid="uid://kcssihh3cayd" path="res://Map/Assets/World_Env.tres" id="1_vsylq"]
 [ext_resource type="Script" path="res://addons/terrabrush/TerraBrush.cs" id="1_y75qx"]
@@ -276,12 +276,6 @@ ObjectsTexture = []
 script = ExtResource("4_ibc8e")
 Zones = [SubResource("Resource_0lt84"), SubResource("Resource_artpv"), SubResource("Resource_qoet8"), SubResource("Resource_svgyn"), SubResource("Resource_cf751"), SubResource("Resource_rm3fq"), SubResource("Resource_fdfkr"), SubResource("Resource_udyqt"), SubResource("Resource_ahxc7"), SubResource("Resource_xot62"), SubResource("Resource_ewr47"), SubResource("Resource_07eki"), SubResource("Resource_tdrp0"), SubResource("Resource_shheb"), SubResource("Resource_75vu5"), SubResource("Resource_kuie2"), SubResource("Resource_mtppk"), SubResource("Resource_qr5rn"), SubResource("Resource_qthe6"), SubResource("Resource_yuuqg"), SubResource("Resource_0whd1"), SubResource("Resource_asm03"), SubResource("Resource_h6xk1"), SubResource("Resource_6yvmt"), SubResource("Resource_76n3x")]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_kgsc5"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nhl8h"]
-radius = 2.99627
-height = 11.2404
-
 [node name="World" type="Node3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -296,20 +290,7 @@ script = ExtResource("1_y75qx")
 ZonesSize = 550
 DataPath = "res://Deadwood/World"
 TextureSets = SubResource("Resource_nagbb")
+Foliages = []
+Objects = []
 TerrainZones = SubResource("Resource_00guq")
-metadata/_edit_lock_ = false
-
-[node name="Bean Movment Tester" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 859.634, 0, 858.549)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Bean Movment Tester"]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 5.12126, 0)
-mesh = SubResource("CapsuleMesh_kgsc5")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Bean Movment Tester"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.22166, 0)
-shape = SubResource("CapsuleShape3D_nhl8h")
-
-[node name="Camera3D" type="Camera3D" parent="Bean Movment Tester"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.344971, 9.14742, 0)
-environment = ExtResource("1_vsylq")
+metadata/_edit_lock_ = true
