@@ -1,21 +1,30 @@
 [gd_scene load_steps=6 format=3 uid="uid://0chnym463hcs"]
 
-[ext_resource type="Script" path="res://addons/terrabrush/Scripts/Terrain.cs" id="1_vjtl3"]
+[ext_resource type="Script" uid="uid://davudss2t8vc5" path="res://addons/terrabrush/Scripts/Terrain.cs" id="1_vjtl3"]
 [ext_resource type="Texture2D" uid="uid://c1by6d4lgjo8j" path="res://addons/terrabrush/Assets/texel_density.jpg" id="2_x8un5"]
 [ext_resource type="PackedScene" uid="uid://2taw1ee4hhf2" path="res://addons/terrabrush/Components/Clipmap.tscn" id="3_225j0"]
-[ext_resource type="Shader" path="res://addons/terrabrush/Resources/Shaders/heightmap_clipmap_shader.gdshader" id="4_1oqlj"]
+[ext_resource type="Shader" uid="uid://cudvqhv5gahwr" path="res://addons/terrabrush/Resources/Shaders/heightmap_clipmap_shader.gdshader" id="4_1oqlj"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_i300q"]
 resource_local_to_scene = true
 render_priority = 0
 shader = ExtResource("4_1oqlj")
 shader_parameter/InitialCellWidth = 1.0
-shader_parameter/ZonesSize = null
-shader_parameter/NumberOfZones = null
+shader_parameter/OffsetPosition = Vector3(0, 0, 0)
+shader_parameter/ZonesSize = 0.0
+shader_parameter/NumberOfZones = 0.0
+shader_parameter/ApplyLockTextures = false
 shader_parameter/WaterFactor = 1.0
-shader_parameter/TextureDetail = null
-shader_parameter/NumberOfTextures = null
+shader_parameter/TexturesDetail = PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+shader_parameter/NumberOfTextures = 0
+shader_parameter/HasNormalTextures = false
+shader_parameter/HasRoughnessTextures = false
+shader_parameter/HasHeightTextures = false
 shader_parameter/UseAntitile = true
+shader_parameter/BlendFactor = 0.0
+shader_parameter/NearestFilter = false
+shader_parameter/AlbedoAlphaChannelUsage = 0
+shader_parameter/NormalAlphaChannelUsage = 0
 
 [node name="Terrain" type="Node3D"]
 script = ExtResource("1_vjtl3")

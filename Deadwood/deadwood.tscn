@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://31b54ikp44em"]
+[gd_scene load_steps=3 format=3 uid="uid://31b54ikp44em"]
+
+[ext_resource type="Theme" uid="uid://dlsrw5tbxoqh4" path="res://GuiStuff/GuiTheme.tres" id="1_vpab4"]
+[ext_resource type="Script" uid="uid://go7spmy7fwhj" path="res://Deadwood/Scripts/Gui/dw_find_us_page.gd" id="2_25t4c"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -7,16 +10,22 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_vpab4")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
+[node name="Button" type="Button" parent="AudioStreamPlayer"]
+offset_right = 104.0
+offset_bottom = 23.0
+theme = ExtResource("1_vpab4")
+text = "Find us here"
+script = ExtResource("2_25t4c")
+
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -8.0
-offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
 

@@ -1,64 +1,89 @@
-[gd_scene load_steps=88 format=3 uid="uid://co72qt07lmhgk"]
+[gd_scene load_steps=113 format=3 uid="uid://co72qt07lmhgk"]
 
 [ext_resource type="Environment" uid="uid://kcssihh3cayd" path="res://Map/Assets/World_Env.tres" id="1_vsylq"]
-[ext_resource type="Script" path="res://addons/terrabrush/TerraBrush.cs" id="1_y75qx"]
+[ext_resource type="Script" uid="uid://3maa1xphe5m6" path="res://addons/terrabrush/TerraBrush.cs" id="1_y75qx"]
 [ext_resource type="Texture2D" uid="uid://dunp0p84xa68b" path="res://Deadwood/World/Heightmap_0_0.res" id="2_eeauj"]
-[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/TextureSetResource.cs" id="2_lqx6v"]
+[ext_resource type="Script" uid="uid://mw8vrel4kkrd" path="res://addons/terrabrush/Scripts/EditorResources/TextureSetResource.cs" id="2_lqx6v"]
 [ext_resource type="Texture2D" uid="uid://d1fpsmbmoltka" path="res://Map/Assets/Ground052_1K-PNG_Color.png" id="2_teost"]
-[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/ZoneResource.cs" id="3_k7sd5"]
-[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/TextureSetsResource.cs" id="3_poiev"]
-[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/ZonesResource.cs" id="4_ibc8e"]
+[ext_resource type="Script" uid="uid://bhriss2x6877v" path="res://addons/terrabrush/Scripts/EditorResources/ZoneResource.cs" id="3_k7sd5"]
+[ext_resource type="Script" uid="uid://cdg8tlra3132r" path="res://addons/terrabrush/Scripts/EditorResources/TextureSetsResource.cs" id="3_poiev"]
+[ext_resource type="Script" uid="uid://dliums8mtf8pc" path="res://addons/terrabrush/Scripts/EditorResources/ZonesResource.cs" id="4_ibc8e"]
 [ext_resource type="Texture2D" uid="uid://c72xkbivipmfc" path="res://Map/Assets/Ground052_1K-PNG_NormalGL.png" id="4_ndoyf"]
 [ext_resource type="Texture2D" uid="uid://bqg3cnt1tkkdp" path="res://Deadwood/World/Splatmap_0_0_0.res" id="4_nijx7"]
 [ext_resource type="Texture2D" uid="uid://du3owuhkglbed" path="res://Map/Assets/Ground052_1K-PNG_Roughness.png" id="5_kmb1p"]
 [ext_resource type="Texture2D" uid="uid://haajxojptkhd" path="res://Deadwood/World/Heightmap_0_1.res" id="10_p0n8t"]
 [ext_resource type="Texture2D" uid="uid://btl8tpr2dej0h" path="res://Deadwood/World/Splatmap_0_1_0.res" id="11_4osen"]
 [ext_resource type="Texture2D" uid="uid://b1a20tns0jtwl" path="res://Deadwood/World/Heightmap_1_0.res" id="12_v18io"]
+[ext_resource type="Texture2D" uid="uid://du248e82efxfk" path="res://Deadwood/World/Water_0_0.res" id="13_1q053"]
 [ext_resource type="Texture2D" uid="uid://curv5geoc5bc1" path="res://Deadwood/World/Splatmap_1_0_0.res" id="13_31oi1"]
 [ext_resource type="Texture2D" uid="uid://caqnt8heho1i2" path="res://Deadwood/World/Heightmap_1_1.res" id="14_q1qhb"]
 [ext_resource type="Texture2D" uid="uid://dp1dpw6gg3jug" path="res://Deadwood/World/Splatmap_1_1_0.res" id="15_h3gi8"]
 [ext_resource type="Texture2D" uid="uid://724suc7iaqwc" path="res://Deadwood/World/Heightmap_-1_1.res" id="16_ah8jc"]
 [ext_resource type="Texture2D" uid="uid://bfgl8pal7bmkl" path="res://Deadwood/World/Splatmap_-1_1_0.res" id="17_paqfw"]
+[ext_resource type="Texture2D" uid="uid://yt7vk5vs26cs" path="res://Deadwood/World/Water_0_1.res" id="17_tbwu5"]
 [ext_resource type="Texture2D" uid="uid://dxs4li40hfcmv" path="res://Deadwood/World/Heightmap_-1_0.res" id="18_hnpoe"]
 [ext_resource type="Texture2D" uid="uid://bp7nyuylhic6e" path="res://Deadwood/World/Splatmap_-1_0_0.res" id="19_304ty"]
+[ext_resource type="Texture2D" uid="uid://dyds0ehpi7j7q" path="res://Deadwood/World/Water_1_0.res" id="20_sp02h"]
 [ext_resource type="Texture2D" uid="uid://d1glikogp5h88" path="res://Deadwood/World/Heightmap_-1_-1.res" id="20_tfoqm"]
 [ext_resource type="Texture2D" uid="uid://b2a2yatttwtm" path="res://Deadwood/World/Splatmap_-1_-1_0.res" id="21_a5ecc"]
 [ext_resource type="Texture2D" uid="uid://dnptfilx3rjch" path="res://Deadwood/World/Heightmap_0_-1.res" id="22_g3a0a"]
 [ext_resource type="Texture2D" uid="uid://c73psjpox7bot" path="res://Deadwood/World/Splatmap_0_-1_0.res" id="23_dos8c"]
+[ext_resource type="Texture2D" uid="uid://cfombh3itrnyr" path="res://Deadwood/World/Water_1_1.res" id="23_dy6cf"]
 [ext_resource type="Texture2D" uid="uid://bepefjw7odbqj" path="res://Deadwood/World/Heightmap_1_-1.res" id="24_e3p1w"]
 [ext_resource type="Texture2D" uid="uid://cg3rxg6bvdt2m" path="res://Deadwood/World/Splatmap_1_-1_0.res" id="25_8yfkm"]
+[ext_resource type="Texture2D" uid="uid://p7vmtn7tys87" path="res://Deadwood/World/Water_-1_1.res" id="26_w2r5i"]
 [ext_resource type="Texture2D" uid="uid://cwv7n65vxp0oj" path="res://Deadwood/World/Heightmap_-1_-2.res" id="26_x05oa"]
 [ext_resource type="Texture2D" uid="uid://cs8aim245fo1l" path="res://Deadwood/World/Splatmap_-1_-2_0.res" id="27_robn8"]
 [ext_resource type="Texture2D" uid="uid://dexk4uct8o3s" path="res://Deadwood/World/Heightmap_0_-2.res" id="28_rvjq3"]
+[ext_resource type="Texture2D" uid="uid://dwllbji4dn4pa" path="res://Deadwood/World/Water_-1_0.res" id="29_46pix"]
 [ext_resource type="Texture2D" uid="uid://sy885yelh75f" path="res://Deadwood/World/Splatmap_0_-2_0.res" id="29_6367u"]
 [ext_resource type="Texture2D" uid="uid://olm4kwo41bxv" path="res://Deadwood/World/Heightmap_1_-2.res" id="30_j6hty"]
 [ext_resource type="Texture2D" uid="uid://5j1snw8xm0im" path="res://Deadwood/World/Splatmap_1_-2_0.res" id="31_lstbx"]
 [ext_resource type="Texture2D" uid="uid://d1m36g3j7fk21" path="res://Deadwood/World/Heightmap_2_-2.res" id="32_m0eq1"]
+[ext_resource type="Texture2D" uid="uid://me66a7cji6i4" path="res://Deadwood/World/Water_-1_-1.res" id="32_pm3ex"]
 [ext_resource type="Texture2D" uid="uid://bpfc5dawxcjoe" path="res://Deadwood/World/Splatmap_2_-2_0.res" id="33_dvv72"]
 [ext_resource type="Texture2D" uid="uid://dj3sgwjhsb504" path="res://Deadwood/World/Heightmap_2_-1.res" id="34_lse6c"]
 [ext_resource type="Texture2D" uid="uid://6rvdk1m6jlha" path="res://Deadwood/World/Splatmap_2_-1_0.res" id="35_7rtmt"]
+[ext_resource type="Texture2D" uid="uid://qejv6qlcqu33" path="res://Deadwood/World/Water_0_-1.res" id="35_ve8x2"]
 [ext_resource type="Texture2D" uid="uid://wmawmw80nit7" path="res://Deadwood/World/Heightmap_2_0.res" id="36_83lt5"]
 [ext_resource type="Texture2D" uid="uid://cbt4nr0gr2407" path="res://Deadwood/World/Splatmap_2_0_0.res" id="37_867bu"]
+[ext_resource type="Texture2D" uid="uid://dgreh4vtf8iau" path="res://Deadwood/World/Water_1_-1.res" id="38_6aoxl"]
 [ext_resource type="Texture2D" uid="uid://bc0rju1pkufel" path="res://Deadwood/World/Heightmap_2_1.res" id="38_lelg1"]
 [ext_resource type="Texture2D" uid="uid://gkc3w6m63jmq" path="res://Deadwood/World/Splatmap_2_1_0.res" id="39_s0qbw"]
 [ext_resource type="Texture2D" uid="uid://c3nnsl0s7c1ov" path="res://Deadwood/World/Heightmap_1_2.res" id="40_fhvt2"]
+[ext_resource type="Texture2D" uid="uid://qcgbdpjbk7pi" path="res://Deadwood/World/Water_-1_-2.res" id="41_ie1wh"]
 [ext_resource type="Texture2D" uid="uid://csrfgr78kx0gx" path="res://Deadwood/World/Splatmap_1_2_0.res" id="41_rjgl2"]
 [ext_resource type="Texture2D" uid="uid://chema781xc0rf" path="res://Deadwood/World/Heightmap_2_2.res" id="42_pm6rq"]
 [ext_resource type="Texture2D" uid="uid://bsalo5o88ulqh" path="res://Deadwood/World/Splatmap_2_2_0.res" id="43_hf25q"]
 [ext_resource type="Texture2D" uid="uid://ewj5i1kd0nin" path="res://Deadwood/World/Heightmap_0_2.res" id="44_704pp"]
+[ext_resource type="Texture2D" uid="uid://dc8s2kdo7kss2" path="res://Deadwood/World/Water_0_-2.res" id="44_wnjjd"]
 [ext_resource type="Texture2D" uid="uid://bo3h08n7ft5yb" path="res://Deadwood/World/Splatmap_0_2_0.res" id="45_evbyq"]
 [ext_resource type="Texture2D" uid="uid://clxi0re4dcing" path="res://Deadwood/World/Heightmap_-1_2.res" id="46_nab5f"]
 [ext_resource type="Texture2D" uid="uid://cxghhniufw77t" path="res://Deadwood/World/Splatmap_-1_2_0.res" id="47_18bam"]
+[ext_resource type="Texture2D" uid="uid://br75xnl5nw0fm" path="res://Deadwood/World/Water_1_-2.res" id="47_rk67a"]
 [ext_resource type="Texture2D" uid="uid://bij8wquyf3400" path="res://Deadwood/World/Heightmap_-2_2.res" id="48_ayris"]
 [ext_resource type="Texture2D" uid="uid://ci0gvi7pk3p5k" path="res://Deadwood/World/Splatmap_-2_2_0.res" id="49_evfx4"]
 [ext_resource type="Texture2D" uid="uid://exhh4o6clw4e" path="res://Deadwood/World/Heightmap_-2_1.res" id="50_7jyr5"]
+[ext_resource type="Texture2D" uid="uid://d0e586l2niygk" path="res://Deadwood/World/Water_2_-2.res" id="50_cdqae"]
 [ext_resource type="Texture2D" uid="uid://bwslysv4npnw0" path="res://Deadwood/World/Splatmap_-2_1_0.res" id="51_vgpi4"]
 [ext_resource type="Texture2D" uid="uid://cei3s6hqbg3a1" path="res://Deadwood/World/Heightmap_-2_0.res" id="52_1nhr7"]
+[ext_resource type="Texture2D" uid="uid://13q2ugooerb8" path="res://Deadwood/World/Water_2_-1.res" id="53_m5053"]
 [ext_resource type="Texture2D" uid="uid://ccv5krdu1p2rr" path="res://Deadwood/World/Splatmap_-2_0_0.res" id="53_xd2q0"]
 [ext_resource type="Texture2D" uid="uid://dnngku0al1j7x" path="res://Deadwood/World/Heightmap_-2_-1.res" id="54_bct6u"]
 [ext_resource type="Texture2D" uid="uid://brkvhoai0rwd" path="res://Deadwood/World/Splatmap_-2_-1_0.res" id="55_t70sb"]
+[ext_resource type="Texture2D" uid="uid://g1wrho0v88kx" path="res://Deadwood/World/Water_2_0.res" id="56_43cdc"]
 [ext_resource type="Texture2D" uid="uid://3bicvc5etb8g" path="res://Deadwood/World/Heightmap_-2_-2.res" id="56_vv6uv"]
 [ext_resource type="Texture2D" uid="uid://djffs1eeuesa" path="res://Deadwood/World/Splatmap_-2_-2_0.res" id="57_dtpgh"]
+[ext_resource type="Texture2D" uid="uid://bmferoy5t67rn" path="res://Deadwood/World/Water_2_1.res" id="59_da1oh"]
+[ext_resource type="Texture2D" uid="uid://orib4nfxsuoq" path="res://Deadwood/World/Water_1_2.res" id="62_q0syc"]
+[ext_resource type="Texture2D" uid="uid://ciouw8puym5lh" path="res://Deadwood/World/Water_2_2.res" id="65_hahfk"]
+[ext_resource type="Texture2D" uid="uid://4on17lo662ap" path="res://Deadwood/World/Water_0_2.res" id="68_d87qx"]
+[ext_resource type="Texture2D" uid="uid://cg062rtx3dqao" path="res://Deadwood/World/Water_-1_2.res" id="71_twdss"]
+[ext_resource type="Texture2D" uid="uid://t51og44jgovg" path="res://Deadwood/World/Water_-2_2.res" id="74_a2cqg"]
+[ext_resource type="Texture2D" uid="uid://dlvvkmck81554" path="res://Deadwood/World/Water_-2_1.res" id="77_c15bc"]
+[ext_resource type="Texture2D" uid="uid://chlemvy040xuy" path="res://Deadwood/World/Water_-2_0.res" id="80_qe6ay"]
+[ext_resource type="Texture2D" uid="uid://dwuo70om8dhu8" path="res://Deadwood/World/Water_-2_-1.res" id="83_lho3l"]
+[ext_resource type="Texture2D" uid="uid://d1xs822julu0c" path="res://Deadwood/World/Water_-2_-2.res" id="86_jnadg"]
 
 [sub_resource type="Resource" id="Resource_g6qh1"]
 script = ExtResource("2_lqx6v")
@@ -79,6 +104,7 @@ HeightMapTexture = ExtResource("2_eeauj")
 SplatmapsTexture = [ExtResource("4_nijx7")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("13_1q053")
 
 [sub_resource type="Resource" id="Resource_artpv"]
 script = ExtResource("3_k7sd5")
@@ -87,6 +113,7 @@ HeightMapTexture = ExtResource("10_p0n8t")
 SplatmapsTexture = [ExtResource("11_4osen")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("17_tbwu5")
 
 [sub_resource type="Resource" id="Resource_qoet8"]
 script = ExtResource("3_k7sd5")
@@ -95,6 +122,7 @@ HeightMapTexture = ExtResource("12_v18io")
 SplatmapsTexture = [ExtResource("13_31oi1")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("20_sp02h")
 
 [sub_resource type="Resource" id="Resource_svgyn"]
 script = ExtResource("3_k7sd5")
@@ -103,6 +131,7 @@ HeightMapTexture = ExtResource("14_q1qhb")
 SplatmapsTexture = [ExtResource("15_h3gi8")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("23_dy6cf")
 
 [sub_resource type="Resource" id="Resource_cf751"]
 script = ExtResource("3_k7sd5")
@@ -111,6 +140,7 @@ HeightMapTexture = ExtResource("16_ah8jc")
 SplatmapsTexture = [ExtResource("17_paqfw")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("26_w2r5i")
 
 [sub_resource type="Resource" id="Resource_rm3fq"]
 script = ExtResource("3_k7sd5")
@@ -119,6 +149,7 @@ HeightMapTexture = ExtResource("18_hnpoe")
 SplatmapsTexture = [ExtResource("19_304ty")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("29_46pix")
 
 [sub_resource type="Resource" id="Resource_fdfkr"]
 script = ExtResource("3_k7sd5")
@@ -127,6 +158,7 @@ HeightMapTexture = ExtResource("20_tfoqm")
 SplatmapsTexture = [ExtResource("21_a5ecc")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("32_pm3ex")
 
 [sub_resource type="Resource" id="Resource_udyqt"]
 script = ExtResource("3_k7sd5")
@@ -135,6 +167,7 @@ HeightMapTexture = ExtResource("22_g3a0a")
 SplatmapsTexture = [ExtResource("23_dos8c")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("35_ve8x2")
 
 [sub_resource type="Resource" id="Resource_ahxc7"]
 script = ExtResource("3_k7sd5")
@@ -143,6 +176,7 @@ HeightMapTexture = ExtResource("24_e3p1w")
 SplatmapsTexture = [ExtResource("25_8yfkm")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("38_6aoxl")
 
 [sub_resource type="Resource" id="Resource_xot62"]
 script = ExtResource("3_k7sd5")
@@ -151,6 +185,7 @@ HeightMapTexture = ExtResource("26_x05oa")
 SplatmapsTexture = [ExtResource("27_robn8")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("41_ie1wh")
 
 [sub_resource type="Resource" id="Resource_ewr47"]
 script = ExtResource("3_k7sd5")
@@ -159,6 +194,7 @@ HeightMapTexture = ExtResource("28_rvjq3")
 SplatmapsTexture = [ExtResource("29_6367u")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("44_wnjjd")
 
 [sub_resource type="Resource" id="Resource_07eki"]
 script = ExtResource("3_k7sd5")
@@ -167,6 +203,7 @@ HeightMapTexture = ExtResource("30_j6hty")
 SplatmapsTexture = [ExtResource("31_lstbx")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("47_rk67a")
 
 [sub_resource type="Resource" id="Resource_tdrp0"]
 script = ExtResource("3_k7sd5")
@@ -175,6 +212,7 @@ HeightMapTexture = ExtResource("32_m0eq1")
 SplatmapsTexture = [ExtResource("33_dvv72")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("50_cdqae")
 
 [sub_resource type="Resource" id="Resource_shheb"]
 script = ExtResource("3_k7sd5")
@@ -183,6 +221,7 @@ HeightMapTexture = ExtResource("34_lse6c")
 SplatmapsTexture = [ExtResource("35_7rtmt")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("53_m5053")
 
 [sub_resource type="Resource" id="Resource_75vu5"]
 script = ExtResource("3_k7sd5")
@@ -191,6 +230,7 @@ HeightMapTexture = ExtResource("36_83lt5")
 SplatmapsTexture = [ExtResource("37_867bu")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("56_43cdc")
 
 [sub_resource type="Resource" id="Resource_kuie2"]
 script = ExtResource("3_k7sd5")
@@ -199,6 +239,7 @@ HeightMapTexture = ExtResource("38_lelg1")
 SplatmapsTexture = [ExtResource("39_s0qbw")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("59_da1oh")
 
 [sub_resource type="Resource" id="Resource_mtppk"]
 script = ExtResource("3_k7sd5")
@@ -207,6 +248,7 @@ HeightMapTexture = ExtResource("40_fhvt2")
 SplatmapsTexture = [ExtResource("41_rjgl2")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("62_q0syc")
 
 [sub_resource type="Resource" id="Resource_qr5rn"]
 script = ExtResource("3_k7sd5")
@@ -215,6 +257,7 @@ HeightMapTexture = ExtResource("42_pm6rq")
 SplatmapsTexture = [ExtResource("43_hf25q")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("65_hahfk")
 
 [sub_resource type="Resource" id="Resource_qthe6"]
 script = ExtResource("3_k7sd5")
@@ -223,6 +266,7 @@ HeightMapTexture = ExtResource("44_704pp")
 SplatmapsTexture = [ExtResource("45_evbyq")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("68_d87qx")
 
 [sub_resource type="Resource" id="Resource_yuuqg"]
 script = ExtResource("3_k7sd5")
@@ -231,6 +275,7 @@ HeightMapTexture = ExtResource("46_nab5f")
 SplatmapsTexture = [ExtResource("47_18bam")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("71_twdss")
 
 [sub_resource type="Resource" id="Resource_0whd1"]
 script = ExtResource("3_k7sd5")
@@ -239,6 +284,7 @@ HeightMapTexture = ExtResource("48_ayris")
 SplatmapsTexture = [ExtResource("49_evfx4")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("74_a2cqg")
 
 [sub_resource type="Resource" id="Resource_asm03"]
 script = ExtResource("3_k7sd5")
@@ -247,6 +293,7 @@ HeightMapTexture = ExtResource("50_7jyr5")
 SplatmapsTexture = [ExtResource("51_vgpi4")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("77_c15bc")
 
 [sub_resource type="Resource" id="Resource_h6xk1"]
 script = ExtResource("3_k7sd5")
@@ -255,6 +302,7 @@ HeightMapTexture = ExtResource("52_1nhr7")
 SplatmapsTexture = [ExtResource("53_xd2q0")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("80_qe6ay")
 
 [sub_resource type="Resource" id="Resource_6yvmt"]
 script = ExtResource("3_k7sd5")
@@ -263,6 +311,7 @@ HeightMapTexture = ExtResource("54_bct6u")
 SplatmapsTexture = [ExtResource("55_t70sb")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("83_lho3l")
 
 [sub_resource type="Resource" id="Resource_76n3x"]
 script = ExtResource("3_k7sd5")
@@ -271,6 +320,7 @@ HeightMapTexture = ExtResource("56_vv6uv")
 SplatmapsTexture = [ExtResource("57_dtpgh")]
 FoliagesTexture = []
 ObjectsTexture = []
+WaterTexture = ExtResource("86_jnadg")
 
 [sub_resource type="Resource" id="Resource_00guq"]
 script = ExtResource("4_ibc8e")
@@ -293,4 +343,4 @@ TextureSets = SubResource("Resource_nagbb")
 Foliages = []
 Objects = []
 TerrainZones = SubResource("Resource_00guq")
-metadata/_edit_lock_ = true
+metadata/_edit_lock_ = false

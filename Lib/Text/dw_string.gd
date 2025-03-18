@@ -46,11 +46,11 @@ var _key: String = ""  # Default empty string
 var _arguments: Dictionary = {}  # Arguments for placeholder replacement
 
 # Create a new DWString instance
-static func new(key: String, arguments: Dictionary = {}) -> DWString:
-	var instance = DWString.new()
-	instance._key = key
-	instance._arguments = arguments
-	return instance
+# static func new(key: String, arguments: Dictionary = {}) -> DWString:
+#	var instance = DWString
+#	instance._key = key
+#	instance._arguments = arguments
+#	return instance
 
 # Setter for the key
 func set_key(value: String) -> void:
