@@ -12,8 +12,9 @@ config_version=5
 
 config/name="Deadwood Express"
 config/version="0.0.1"
-run/main_scene="res://Deadwood/deadwood.tscn"
+run/main_scene="uid://chh681uhmp16u"
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
+boot_splash/fullsize=false
 boot_splash/image="res://Assets/Splash.png"
 config/icon="res://icon.svg"
 boot_splash/minimum_display_time=5000
@@ -21,9 +22,6 @@ boot_splash/minimum_display_time=5000
 [autoload]
 
 GDConsole="*res://addons/gdconsole/gdconsole.gd"
-DwString="*res://Lib/Text/dw_string.gd"
-DwEventBus="*res://Lib/dw_event_bus.gd"
-DwBloodScreenEngine="*res://Lib/dw_blood_screen_engine.gd"
 
 [display]
 
@@ -38,13 +36,19 @@ project/assembly_name="Deadwood Express"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/gdconsole/plugin.cfg", "res://addons/terrabrush/plugin.cfg")
+enabled=PackedStringArray("res://addons/gdconsole/plugin.cfg", "res://addons/godot-css-theme/plugin.cfg", "res://addons/lua-gdextension/plugin.cfg", "res://addons/terrabrush/plugin.cfg")
 
 [importer_defaults]
 
 animation_library={
 "animation/fps": 60.0
 }
+
+[maaacks_credits_scene]
+
+disable_update_check=false
+disable_install_wizard=true
+copy_path="res://"
 
 [physics]
 
